@@ -1,0 +1,42 @@
+
+INFO:scraping-logger:started work function random_choice date: 2022-10-21 13:13:39.583244
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): google.com:443
+DEBUG:urllib3.connectionpool:https://google.com:443 "GET / HTTP/1.1" 301 220
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.google.com:443
+ERROR:scraping-logger:HTTPSConnectionPool(host='www.google.com', port=443): Max retries exceeded with url: / (Caused by ProxyError('Cannot connect to proxy.', TimeoutError('timed out'))) date: 2022-10-21 13:13:46.949079
+INFO:scraping-logger:started work function random_choice date: 2022-10-21 13:13:46.950080
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): google.com:443
+DEBUG:urllib3.connectionpool:https://google.com:443 "GET / HTTP/1.1" 301 220
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.google.com:443
+DEBUG:urllib3.connectionpool:https://www.google.com:443 "GET / HTTP/1.1" 200 None
+INFO:scraping-logger:started work function: random_choice date: 2022-10-21 13:18:26.242778
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): google.com:443
+DEBUG:urllib3.connectionpool:https://google.com:443 "GET / HTTP/1.1" 301 220
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.google.com:443
+DEBUG:urllib3.connectionpool:https://www.google.com:443 "GET / HTTP/1.1" 200 None
+INFO:scraping-logger:started work function: random_choice date: 2022-10-21 13:18:45.362839
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): google.com:443
+DEBUG:urllib3.connectionpool:https://google.com:443 "GET / HTTP/1.1" 301 220
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.google.com:443
+DEBUG:urllib3.connectionpool:https://www.google.com:443 "GET / HTTP/1.1" 200 None
+INFO:scraping-logger:started work function: random_choice date: 2022-10-21 13:18:48.555050
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): google.com:443
+DEBUG:urllib3.connectionpool:https://google.com:443 "GET / HTTP/1.1" 301 220
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.google.com:443
+DEBUG:urllib3.connectionpool:https://www.google.com:443 "GET / HTTP/1.1" 200 None
+INFO:scraping-logger:started work function: random_choice date: 2022-10-21 13:18:51.711580
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): google.com:443
+ERROR:scraping-logger:HTTPSConnectionPool(host='google.com', port=443): Max retries exceeded with url: / (Caused by ProxyError('Cannot connect to proxy.', RemoteDisconnected('Remote end closed connection without response'))) date: 2022-10-21 13:18:57.711718
+INFO:scraping-logger:started work function: random_choice date: 2022-10-21 13:18:57.712719
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): google.com:443
+ERROR:scraping-logger:HTTPSConnectionPool(host='google.com', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x0000001109AAFF40>, 'Connection to 186.5.94.209 timed out. (connect timeout=5)')) date: 2022-10-21 13:19:02.718137
+INFO:scraping-logger:started work function: random_choice date: 2022-10-21 13:19:02.718137
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): google.com:443
+ERROR:scraping-logger:HTTPSConnectionPool(host='google.com', port=443): Max retries exceeded with url: / (Caused by ProxyError('Cannot connect to proxy.', ConnectionResetError(10054, '\u0423\u0434\u0430\u043b\u0435\u043d\u043d\u044b\u0439 \u0445\u043e\u0441\u0442 \u043f\u0440\u0438\u043d\u0443\u0434\u0438\u0442\u0435\u043b\u044c\u043d\u043e \u0440\u0430\u0437\u043e\u0440\u0432\u0430\u043b \u0441\u0443\u0449\u0435\u0441\u0442\u0432\u0443\u044e\u0449\u0435\u0435 \u043f\u043e\u0434\u043a\u043b\u044e\u0447\u0435\u043d\u0438\u0435', None, 10054, None))) date: 2022-10-21 13:19:04.451695
+INFO:scraping-logger:started work function: random_choice date: 2022-10-21 13:19:04.481738
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): google.com:443
+DEBUG:urllib3.connectionpool:https://google.com:443 "GET / HTTP/1.1" 301 220
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.google.com:443
+DEBUG:urllib3.connectionpool:https://www.google.com:443 "GET / HTTP/1.1" 200 None
+INFO:scraping-logger:started work function: random_choice date: 2022-10-21 13:19:11.928325
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): google.com:443
