@@ -1,11 +1,20 @@
+import sys
+from time import sleep
+
+import bs4
+from functools import lru_cache
+import secrets
+import threading
+from threading import Timer
 import datetime
 import random
-import sys
-import bs4
 import requests
 import logging
+import urllib3
 
 proxies = ['174.138.16.96:8888', '186.5.94.209:999', '143.198.40.24:8888']
+useless_proxies = ['174.138.16.96:8888', '186.5.94.209:999']
+
 
 raw_urls = []
 
@@ -28,12 +37,19 @@ def logg(**kwargs):
                 log_.debug(f'{value} date: {datetime.datetime.now()}')
 
 
-def random_choice(lst) -> dict:
+def random_choice(lst):
     logg(info=f'started work function: {random_choice.__name__}')
-    elem = random.choice(lst)
-    print(f'ip address-proxy: {elem}')
-    proxy_ = {'https': elem}
-    return proxy_
+    if not lst:
+        logg(warning='list is empty')
+    else:
+        elem = random.choice(lst)
+        try:
+            index = lst.index(elem)
+            print(f'ip address-proxy: {elem} and index him: {index}')
+            proxy_ = {'https': elem}
+            return proxy_, index
+        except ValueError as valErr:
+            logg(error=valErr)
 
 
 def svg():
@@ -57,17 +73,72 @@ def beauty_s():
 
 def req():
     while True:
+        rand_proxy, index = random_choice(proxies)
+        if not bool(rand_proxy):
+            logg(warning=f'list is empty, from function: {req.__name__}')
+            break
         try:
             response = requests.get(
                 url='https://google.com',
                 timeout=5,
-                proxies=random_choice(proxies),
+                proxies=rand_proxy,
                 verify=False
             )
             html = response.text
             file(html)
-        except Exception as ex:
+        except requests.exceptions.ConnectionError as ex:
             logg(error=ex)
+            useless_proxies.append(rand_proxy['https'])
+            continue
+        except urllib3.exceptions.ProxyError or urllib3.exceptions.TimeoutError as ex:
+            if requests.exceptions.ProxyError:
+                logg(error=ex)
+                useless_proxies.append(rand_proxy['https'])
+                continue
 
 
-req()
+def cleaning_useless_proxies(list_proxy, n):
+    list_proxy.clear()
+    print(f'list: was clear {n}')
+
+
+def funcc():
+    while True:
+        list_ = [1, 2, 3, 4, 5]
+        useless_list = [1, 2, 3, 4]
+        try:
+            elem = random.choice([x for x in list_ if x not in useless_list])
+            print(elem)
+            sleep(0.5)
+            continue
+        except IndexError as err:
+            print('error with index')
+            break
+
+
+# while True:
+#     function_cleaning = Timer(5.0, cleaning_useless_proxies, (useless_proxies, 1))
+#     threads = []
+#     if function_cleaning.:
+#         sleep(5)
+#         print('thread is running.')
+#     else:
+#         print('start thread.')
+#         function_cleaning.start()
+
+
+def setInterval(func,time):
+    e = threading.Event()
+    while not e.wait(time):
+        func()
+
+
+def foo():
+    print ("hello")
+
+
+setInterval(foo,5)
+
+while True:
+    sleep(2)
+    print('hi')

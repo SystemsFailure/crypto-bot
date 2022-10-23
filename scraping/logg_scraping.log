@@ -40,3 +40,95 @@ DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.google.com:4
 DEBUG:urllib3.connectionpool:https://www.google.com:443 "GET / HTTP/1.1" 200 None
 INFO:scraping-logger:started work function: random_choice date: 2022-10-21 13:19:11.928325
 DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): google.com:443
+INFO:scraping-logger:started work function: random_choice date: 2022-10-22 13:28:40.318358
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): google.com:443
+ERROR:scraping-logger:HTTPSConnectionPool(host='google.com', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x0000000950013820>, 'Connection to 186.5.94.209 timed out. (connect timeout=5)')) date: 2022-10-22 13:28:45.457977
+INFO:scraping-logger:started work function: random_choice date: 2022-10-22 13:28:45.457977
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): google.com:443
+ERROR:scraping-logger:HTTPSConnectionPool(host='google.com', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x0000000950013F40>, 'Connection to 186.5.94.209 timed out. (connect timeout=5)')) date: 2022-10-22 13:28:50.468202
+INFO:scraping-logger:started work function: random_choice date: 2022-10-22 13:28:50.468202
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): google.com:443
+DEBUG:urllib3.connectionpool:https://google.com:443 "GET / HTTP/1.1" 301 220
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.google.com:443
+DEBUG:urllib3.connectionpool:https://www.google.com:443 "GET / HTTP/1.1" 200 None
+INFO:scraping-logger:started work function: random_choice date: 2022-10-22 13:28:54.495699
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): google.com:443
+DEBUG:urllib3.connectionpool:https://google.com:443 "GET / HTTP/1.1" 301 220
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.google.com:443
+DEBUG:urllib3.connectionpool:https://www.google.com:443 "GET / HTTP/1.1" 200 None
+INFO:scraping-logger:started work function: random_choice date: 2022-10-22 13:28:58.144659
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): google.com:443
+DEBUG:urllib3.connectionpool:https://google.com:443 "GET / HTTP/1.1" 301 220
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.google.com:443
+DEBUG:urllib3.connectionpool:https://www.google.com:443 "GET / HTTP/1.1" 200 None
+INFO:scraping-logger:started work function: random_choice date: 2022-10-22 13:29:03.081210
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): google.com:443
+ERROR:scraping-logger:HTTPSConnectionPool(host='google.com', port=443): Max retries exceeded with url: / (Caused by ProxyError('Cannot connect to proxy.', TimeoutError('timed out'))) date: 2022-10-22 13:29:08.439922
+INFO:scraping-logger:started work function: random_choice date: 2022-10-22 13:29:08.439922
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): google.com:443
+ERROR:scraping-logger:HTTPSConnectionPool(host='google.com', port=443): Max retries exceeded with url: / (Caused by ProxyError('Cannot connect to proxy.', RemoteDisconnected('Remote end closed connection without response'))) date: 2022-10-22 13:29:14.888852
+INFO:scraping-logger:started work function: random_choice date: 2022-10-22 13:29:14.888852
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): google.com:443
+ERROR:scraping-logger:HTTPSConnectionPool(host='google.com', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x0000000950013D90>, 'Connection to 186.5.94.209 timed out. (connect timeout=5)')) date: 2022-10-22 13:29:19.898453
+INFO:scraping-logger:started work function: random_choice date: 2022-10-22 13:29:19.898453
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): google.com:443
+INFO:scraping-logger:started work function: random_choice date: 2022-10-22 13:30:34.601235
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): google.com:443
+ERROR:scraping-logger:HTTPSConnectionPool(host='google.com', port=443): Max retries exceeded with url: / (Caused by ProxyError('Cannot connect to proxy.', RemoteDisconnected('Remote end closed connection without response'))) date: 2022-10-22 13:30:36.299847
+INFO:scraping-logger:started work function: random_choice date: 2022-10-22 13:30:36.299847
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): google.com:443
+ERROR:scraping-logger:HTTPSConnectionPool(host='google.com', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x0000002A197F3BB0>, 'Connection to 186.5.94.209 timed out. (connect timeout=5)')) date: 2022-10-22 13:30:41.315796
+INFO:scraping-logger:started work function: random_choice date: 2022-10-22 13:30:41.315796
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): google.com:443
+ERROR:scraping-logger:HTTPSConnectionPool(host='google.com', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x0000002A19850190>, 'Connection to 186.5.94.209 timed out. (connect timeout=5)')) date: 2022-10-22 13:30:46.315993
+INFO:scraping-logger:started work function: random_choice date: 2022-10-22 13:30:46.315993
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): google.com:443
+ERROR:scraping-logger:HTTPSConnectionPool(host='google.com', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x0000002A19850850>, 'Connection to 186.5.94.209 timed out. (connect timeout=5)')) date: 2022-10-22 13:30:51.316422
+INFO:scraping-logger:started work function: random_choice date: 2022-10-22 13:30:51.316422
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): google.com:443
+DEBUG:urllib3.connectionpool:https://google.com:443 "GET / HTTP/1.1" 301 220
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.google.com:443
+DEBUG:urllib3.connectionpool:https://www.google.com:443 "GET / HTTP/1.1" 200 None
+INFO:scraping-logger:started work function: random_choice date: 2022-10-22 13:30:55.304727
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): google.com:443
+ERROR:scraping-logger:HTTPSConnectionPool(host='google.com', port=443): Max retries exceeded with url: / (Caused by ProxyError('Cannot connect to proxy.', ConnectionResetError(10054, '\u0423\u0434\u0430\u043b\u0435\u043d\u043d\u044b\u0439 \u0445\u043e\u0441\u0442 \u043f\u0440\u0438\u043d\u0443\u0434\u0438\u0442\u0435\u043b\u044c\u043d\u043e \u0440\u0430\u0437\u043e\u0440\u0432\u0430\u043b \u0441\u0443\u0449\u0435\u0441\u0442\u0432\u0443\u044e\u0449\u0435\u0435 \u043f\u043e\u0434\u043a\u043b\u044e\u0447\u0435\u043d\u0438\u0435', None, 10054, None))) date: 2022-10-22 13:30:56.989588
+INFO:scraping-logger:started work function: random_choice date: 2022-10-22 13:30:57.036466
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): google.com:443
+DEBUG:urllib3.connectionpool:https://google.com:443 "GET / HTTP/1.1" 301 220
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.google.com:443
+DEBUG:urllib3.connectionpool:https://www.google.com:443 "GET / HTTP/1.1" 200 None
+INFO:scraping-logger:started work function: random_choice date: 2022-10-22 13:31:02.742987
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): google.com:443
+ERROR:scraping-logger:HTTPSConnectionPool(host='google.com', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x0000002A197F3B20>, 'Connection to 186.5.94.209 timed out. (connect timeout=5)')) date: 2022-10-22 13:31:07.767262
+INFO:scraping-logger:started work function: random_choice date: 2022-10-22 13:31:07.767262
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): google.com:443
+INFO:scraping-logger:started work function: random_choice date: 2022-10-22 13:31:46.744403
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): google.com:443
+ERROR:scraping-logger:HTTPSConnectionPool(host='google.com', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x0000000142FA3940>, 'Connection to 186.5.94.209 timed out. (connect timeout=5)')) date: 2022-10-22 13:31:51.763799
+INFO:scraping-logger:started work function: random_choice date: 2022-10-22 13:31:51.763799
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): google.com:443
+INFO:scraping-logger:started work function: random_choice date: 2022-10-22 13:32:58.540527
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): google.com:443
+DEBUG:urllib3.connectionpool:https://google.com:443 "GET / HTTP/1.1" 301 220
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.google.com:443
+ERROR:scraping-logger:HTTPSConnectionPool(host='www.google.com', port=443): Max retries exceeded with url: / (Caused by ProxyError('Cannot connect to proxy.', TimeoutError('_ssl.c:980: The handshake operation timed out'))) date: 2022-10-22 13:33:07.040427
+INFO:scraping-logger:started work function: random_choice date: 2022-10-22 13:33:07.040427
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): google.com:443
+INFO:scraping-logger:started work function: random_choice date: 2022-10-22 13:34:17.154682
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): google.com:443
+ERROR:scraping-logger:HTTPSConnectionPool(host='google.com', port=443): Max retries exceeded with url: / (Caused by ProxyError('Cannot connect to proxy.', TimeoutError('timed out'))) date: 2022-10-22 13:34:25.561885
+INFO:scraping-logger:started work function: random_choice date: 2022-10-22 13:34:25.561885
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): google.com:443
+ERROR:scraping-logger:HTTPSConnectionPool(host='google.com', port=443): Max retries exceeded with url: / (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x0000005933E33B80>, 'Connection to 186.5.94.209 timed out. (connect timeout=5)')) date: 2022-10-22 13:34:30.571305
+INFO:scraping-logger:started work function: random_choice date: 2022-10-22 13:34:30.571305
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): google.com:443
+DEBUG:urllib3.connectionpool:https://google.com:443 "GET / HTTP/1.1" 301 220
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.google.com:443
+ERROR:scraping-logger:HTTPSConnectionPool(host='www.google.com', port=443): Max retries exceeded with url: / (Caused by ProxyError('Cannot connect to proxy.', TimeoutError('timed out'))) date: 2022-10-22 13:34:37.826429
+INFO:scraping-logger:started work function: random_choice date: 2022-10-22 13:34:37.826429
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): google.com:443
+ERROR:scraping-logger:HTTPSConnectionPool(host='google.com', port=443): Max retries exceeded with url: / (Caused by ProxyError('Cannot connect to proxy.', TimeoutError('timed out'))) date: 2022-10-22 13:34:43.217634
+INFO:scraping-logger:started work function: random_choice date: 2022-10-22 13:34:43.217634
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): google.com:443
+DEBUG:urllib3.connectionpool:https://google.com:443 "GET / HTTP/1.1" 301 220
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.google.com:443
